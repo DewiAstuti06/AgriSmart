@@ -177,5 +177,52 @@ ul li::before {
     background-color: #f0f0f0;
     background-image: url('mobile-background.jpg');
     background-size: cover;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .sidebar h2, .sidebar footer {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row img {
+    width: 100%;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
   }
 }
