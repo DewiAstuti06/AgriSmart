@@ -17,6 +17,9 @@
 </head>
 <body>
 
+  <!-- Tombol hamburger -->
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
   <div class="container">
     <aside class="sidebar">
       <h2>🌾 AgriSmart</h2>
@@ -36,7 +39,7 @@
     <main class="main-content">
       <section id="tentang">
         <h1>Tentang AgriSmart</h1>
-        <img src="2.png" alt="Logo AgriSmart" style="width: 1000px; height: auto; margin-bottom: 20px;">
+        <img src="2.png" alt="Logo AgriSmart" style="width: 100%; height: auto; margin-bottom: 20px; border-radius: 8px;">
         <p>
           AgriSmart adalah platform interaktif berbasis web yang dirancang untuk membantu petani dan pelaku usaha 
           di sektor pertanian dalam mengambil keputusan berbasis data. Dengan menggunakan analisis data dan teknologi,
@@ -155,5 +158,11 @@
     </main>
   </div>
 
+  <!-- Script untuk toggle sidebar di HP -->
+  <script>
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
